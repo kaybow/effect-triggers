@@ -35,11 +35,11 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+  transition: .6s;
 }
 
 .show-box {
   opacity: 1;
-  transition: opacity .6s;
 }
 
 .diamond {
@@ -50,10 +50,11 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: .6s;
 }
 
 .move-shape {
-  right: 200px;
+  right: 100px;
 }
 
 .panel {
@@ -67,6 +68,11 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+  transition: .6s;
+}
+
+.collapse {
+  max-height: 0;
 }
 
 .panel h2 {
