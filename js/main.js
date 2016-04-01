@@ -11,5 +11,13 @@ $('.btn-collapse-expand').on('click', function () {
 });
 
 $('.btn-bounce').on('click', function () {
-  $('.circle').toggleClass('bounce');
+  $('.circle').addClass('bounce');
+});
+
+$('.circle').on('animationend', function () {
+  $('.circle').removeClass('bounce');
+});
+
+$('.btn-append').on('click', function () {
+  $('.list').prepend('<li>New List Item</li>');
 });

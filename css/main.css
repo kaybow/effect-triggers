@@ -89,6 +89,29 @@ div {
   border-radius: 50%;
 }
 
+.bounce {
+  animation: bounce 5s;
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-15px, -15px);
+  }
+
+  50% {
+    transform: translate(-30px, 5px);
+  }
+
+  100% {
+    transform: translate(-45px, 15px);
+  }
+}
+
 .list {
   bottom: 1em;
   margin: 0;
@@ -113,4 +136,17 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+
+  animation: list .5s forwards;
+}
+
+@keyframes list {
+
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 1.5em;
+  }
 }
