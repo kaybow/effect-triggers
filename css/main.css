@@ -37,6 +37,11 @@ div {
   opacity: 0;
 }
 
+.show-box {
+  opacity: 1;
+  transition: opacity .6s;
+}
+
 .diamond {
   height: 80px;
   right: -100px;
@@ -45,6 +50,10 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+}
+
+.move-shape {
+  right: 200px;
 }
 
 .panel {
